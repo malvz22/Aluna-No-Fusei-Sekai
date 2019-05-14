@@ -1,0 +1,4 @@
+narrator "<i>They both walked to school.</i>" exit(Nella)
+setBackground(null)
+
+Load(story_a2)

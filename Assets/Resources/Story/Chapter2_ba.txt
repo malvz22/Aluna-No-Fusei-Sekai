@@ -1,0 +1,183 @@
+narrator "Dylan takes the stone from the doctor then he throws it away"
+
+Doctor "Hey! {a}Why would you do that?"
+
+Dylan "If it is important, it would look good."
+
+narrator "<i>after awhile, the stone he threw away came flying back to him hitting him on the head</i>"
+
+Dylan "Huh?! What the hell?"
+
+setBody(Nella,casualAngle) setFace(Nella,laughA) next
+Nella "See? I believe you need that “trash”"
+
+setFace(Nella,puzzledA) next
+
+Dylan "Hey!! Who threw this?!"
+
+narrator "then he throws the <b>Stone</b> again"
+
+Dylan "Let’s just move!"
+
+narrator "and so they all started walking"
+
+Dylan "Where is that guardian?"
+
+Nella "Maybe she is invisible?"
+
+narrator "Then the stone came back to him"
+
+Dylan "Okay… {a}This is so weird in so many ways"
+
+Nella "Maybe you have been chosen by that stone as its keeper."
+
+Dylan "What now? A stone can make <b>decisions</b> in this world?"
+
+Doctor "Seems like it is a part of you"
+
+move(Nella,0.1,0.1) move(Doctor,0.35,0.1) enter(Treyni) setPosition(Treyni,0.7) next
+Treyni "It is indeed."
+
+Dylan "*in shock* {a}You!! {a}Explain!"
+
+Treyni "*giggles* calm down hero there is nothing to be confused about."
+
+Dylan "Sure! {a}Falling of from different dimension and rocks that could choose its owner. {a}Nothing to be confused about."
+
+setFace(Nella,blush2A) setBody(Nella,casualAngle)
+Nella "Can we head to some town or some place? {a}I’m really hungry."
+
+Treyni "Sure."
+
+narrator "As they were walking the ground shook and it tore apart causing Nella to fall down. {a}But then she floats." exit(Nella) exit(Doctor) exit(Treyni) setBackground(null)
+
+Dylan "You can fly?!"
+
+Nella "I can fly?! "
+
+Treyni "It seems that the 3 of you have attained power entering this world."
+
+Doctor "I have to?!"
+
+narrator "As they were talking about their new powers, Dylan sensed something lurking"
+
+Dylan "Hey guys! Feel that?"
+
+Treyni "Get ready for an ambush!"
+
+Dylan "Over there! *Shoots white ray of light bursting knocking themselves back*"
+
+Doctor and Nella "Watch it! The hell was that?"
+
+Dylan "I can feel my power raising!"
+
+Treyni "Careful, it’s not over yet."
+
+Dylan "Watch out doc! Its heading towards you!"
+
+Doctor "*Bombards air towards the monster* How did I even do that?!"
+
+Nella "*Scatter flower!* (She spreads flowers circling the monster and dispersed the flowers into poison mist)"
+
+Dylan "How did you know that was gonna work?"
+
+Nella "Instinct."
+
+Dylan "I’ll finish it off {a}(His eyes turned white and gray){a}(Heavens Judgement!) {a}(Drops a giant hammer from the sky onto the monster and the hammer bursts with purple thunder bursting the monster apart.)"
+
+setBackground(forest) enter(Nella) enter(Treyni) enter(Doctor) setBody(Nella,casualAngle) setFace(Nella,surprisedA) setPosition(Nella,0.2) setPosition(Doctor,0.5) setPosition(Treyni,0.8) next
+Doctor, Nella, and Treyni "OP!!! 0.0"
+
+Dylan "That was sick!"
+
+setFace(Nella,smileA) next
+Nella "Can we go now?"
+
+Treyni "Yeah, lets go."
+
+narrator "So they all are heading to the nearest town to find supplies and a place to rest." setBackground(null) exit(Nella) exit(Treyni) exit(Doctor)
+
+setBackground(town) enter(Nella) enter(Treyni) enter(Doctor) setBody(Nella,casualAngle) setFace(Nella,happyA) setPosition(Nella,0.2) setPosition(Doctor,0.5) setPosition(Treyni,0.8) next
+Dylan "Woaa! {a}This looks very lively and what is with those people wearing cat ears and dog ears? {a}And why does some has long ears?? {a}Is there a cosplay event?"
+
+Treyni "Cosplay? {a}No, they are different races who lives together with humans. {a}In <b>Kelika</b> we have very diversed culture and people."
+
+Doctor "This is Kelika?"
+
+Treyni "Yes. {a}A lot of supplies, merchants, traders, blacksmiths and living needs in this town."
+
+Nella "Sweet!"
+
+narrator "So then they entered a brunch cafe and started eating" exit(Nella) exit(Doctor) exit(Treyni)
+
+setBackground(cafe) next
+
+Dylan "The meals are somewhat weird but delicious."
+
+Treyni "Let’s get you some weapon and equipments before we go."
+
+narrator "As they were walking to a blacksmith, a random stranger approaches them." setBackground(blacksmith) enter(Nella) enter(Doctor) enter(Treyni) enter(Kinara) setPosition(Nella,0.1) setPosition(Doctor,0.3) setPosition(Treyni,0.5) setPosition(Kinara,0.9) setBody(Nella,casualForward) setFace(Nella,puzzledF)
+Kinara "Hey! Can you help me?"
+
+Dylan "With what?"
+
+Kinara "I have to send this to the king."
+
+Dylan "Who?"
+
+Kinara "<b>King Reki of Creselika</b>"
+
+narrator "Before they finished talking, they got ambushed by massive firepower."  exit(Nella) exit(Kinara) exit(Doctor) exit(Treyni) setBackground(null)
+
+Dylan "Guys?! Oh my gosh! What happened? "
+
+Treyni "It seems that little kid was chased by these bandits and we have our guards down."
+
+Nella "Where is the kid?"
+
+Kinara "(Sprinkles!) She shoots explosive glitters towards the bandits."
+
+setBackground(blacksmith)
+
+enter(Nella) enter(Doctor) enter(Treyni) next
+Nella "Well I guess she doesn’t really need our help."
+
+Dylan "The stone! Where is it?!"
+
+Doctor "Oh no! {a}Some of the bandits must have taken it away thinking it was the little girl’s."
+
+Dylan "We should chased them!"
+
+setFace(Nella,surprisedF)
+Nella "Wait! Where is the girl!?"
+
+enter(Kinara) setFace(Nella,puzzledF) next
+Kinara "Hey Mr. Is this yours? Sorry for having you all involved."
+
+Dylan "Ho..{a}how did you??"
+
+Kinara "I might be little, but I am no weakling."
+
+"Oh yeah I haven’t introduce myself. {a}I’m <b>Kinara</b>, {a}I’m from Hestoria."
+
+Dylan "And you are here because?"
+
+Kinara "I lost my way trying to go to <b>Crescelika</b>"
+
+Treyni "We can guide you there, after all we are heading there."
+
+Nella "We are?"
+
+Treyni "Yeah, Crescelika is the largest nation in this world and it holds most of what you need to know about Aluna."
+
+narrator "Meanwhile... in a hideout." setBackground(null) exit(Kinara) exit(Nella) exit(Doctor) exit(Treyni)
+
+setBackground(evilTemple)
+
+Unknown "Master Tensho, they are here"
+
+Tensho "So it has begun. Good work Aikara"
+
+Aikara "Should we?"
+
+Tensho "No, {a}let them struggle {a}*evil laugh* {a}it won’t be fun eating uncooked food."

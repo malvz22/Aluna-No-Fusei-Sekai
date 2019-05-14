@@ -1,0 +1,24 @@
+Dylan "Okay! Wait I’m coming!."
+
+narrator "<i>You came downstairs.</i>" setBackground(null)
+
+setBackground(livingRoom) enter(Nella) setBody(Nella,casualForward) setFace(Nella,seriousF)
+
+Nella "What took you so long?! Look at the time! {a}You are going to be late and it is your first day of school."
+
+Dylan "First day of school?"
+
+setFace(Nella,surprisedF)
+Nella "Yeah, don’t you remember you are a transfer student?"
+
+Dylan "Oh y yeah"
+
+Nella "Whats the matter?"
+
+Dylan "It’s nothing. Let’s go" setFace(Nella,puzzledF)
+
+Nella "Uh ok then..."
+
+setBackground(null) exit(Nella)
+
+Load(story_a2)

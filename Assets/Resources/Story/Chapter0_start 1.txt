@@ -1,0 +1,30 @@
+MysteriousVoice "Welcome to this world Young Hero."
+"You have been called to this world for a purpose, to lead a nation to victory and pull them away from the strings of the evil and to reveal the mysteries that lies unscathed."
+"This is your chance Young Hero, {a}to pursue justice and bring an end to all twisted enemies and bring new hope and peace to the world."
+"Young Hero. What shall we call you?"
+
+Dylan "It's... {a}Dylan."
+
+MysteriousVoice "Dylan, it is an honor, now go. {a}I will watch over you."
+
+Dylan "Wait! Who are you?"
+
+MysteriousVoice "You will know soon enough Young Hero."
+
+narrator "<i>You suddenly awaken in a room with a slight headache</i>" setBackground(bedRoom)
+
+Dylan "Owww… {a}What just happened? {a}Was that just a dream? {a}Where am I?"
+
+Unknown "Dylan! {a}Dylan! {a}Wake up! {a}It’s time for you to go to school."
+
+Dylan "Huh? Who is that? I have school? {a}This is bad.. I don’t know what’s going on and I don’t know anyone."
+
+Unknown "Dylan! Hey you are going to be late!"
+
+choice "Uhmm what should I do?"
+{
+  "Get up and respond"
+    Load(story_a1)
+  "Asking who the person is"
+    Load(story_b1)
+}

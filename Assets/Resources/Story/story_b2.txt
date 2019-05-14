@@ -1,0 +1,1 @@
+narrator "<i>They both walked to school.</i>" exit(Nella)

@@ -1,0 +1,27 @@
+Kaleyna "Oh? Okay then. See you."
+
+exit(Kaleyna)
+
+Dylan "(I really need to ease my mind, I think going to the park is going to chill me a bit.)"
+
+setBackground(null)
+narrator "<i>Dylan walks to the school park</i>"
+
+setBackground(schoolPark)
+
+Dylan "*sits on a bench* Aaahh~ So relaxing, such a beautiful day. {a}(Suddenly, his phone received a missed call by an unknown number.)"
+"What? Who would called me at this kind of time? Is it Nella? Probably, I should call back."
+
+narrator "Dylan calls the Unknown Number"
+
+Dylan "Hmm.. Unactive?? How?"
+
+narrator "He then received another call from the same number"
+
+choice "What will you do?"
+{
+  "Pick up phone"
+    Load(story_a2ba)
+  "Leave it be"
+    Load(story_a2bb)
+}

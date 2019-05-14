@@ -1,0 +1,24 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="F:\Game Development\Unity\_SERIES FOR MY CHANNEL\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\Character.cs" line="119" column="1" />
+      <Breakpoint file="F:\Game Development\Unity\_SERIES FOR MY CHANNEL\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\Character.cs" line="241" column="1" />
+      <Breakpoint file="F:\Game Development\Unity\_SERIES FOR MY CHANNEL\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\Character.cs" line="144" column="1" />
+      <Breakpoint file="F:\Game Development\Unity\_SERIES FOR MY CHANNEL\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\Character.cs" line="192" column="1" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\TitleHeader.cs" line="30" column="1" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\TitleHeader.cs" line="31" column="1" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\TitleHeader.cs" line="45" column="1" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\TitleHeader.cs" line="46" column="61" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\TitleHeader.cs" line="89" column="1" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\TitleHeader.cs" line="90" column="1" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\TitleHeader.cs" line="91" column="1" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\TitleHeader.cs" line="63" column="1" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\TitleHeader.cs" line="66" column="1" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\TitleHeader.cs" line="69" column="1" />
+      <Breakpoint file="G:\Game Development\Unity\_SERIES FOR MY CHANNEL\LetsMakeAVN\CurrentProject\Let's Make a Visual Novel (StellarStudios)\Assets\Scripts\Core\InputAndChoiceSystem\InputScreen.cs" line="53" column="102" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
