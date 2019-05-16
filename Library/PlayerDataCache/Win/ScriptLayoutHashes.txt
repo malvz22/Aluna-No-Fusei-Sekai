@@ -1,6 +1,6 @@
 Win
 PlayerPath?
-D:/Aluna No Fusei Sekai/Let's Make a Visual Novel (StellarStudios).exe
+F:/game entre/Let's Make a Visual Novel (StellarStudios).exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/Novel.unity
@@ -108,6 +108,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 00274a21279f5cb831ce20f895049e38 Unity.TextMeshPro.dll:TMPro.TMP_SubMeshUI
 aee0c89d7f210ce30f9b7963f9a692cd Assembly-CSharp.dll:.AudioTesting
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TagManager
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MainMenuEvents
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -132,6 +133,7 @@ e6f0efd0e20669d577e9d21526b3d3f9 Assembly-CSharp.dll:TMPro.Examples.WarpTextExam
 dd7520b7d4e690e8c593273e7b9fbe80 Assembly-CSharp.dll:TMPro.Examples.TMP_TextEventCheck
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 0769963ca05483a9f7e743b9118b3fba Assembly-CSharp.dll:TMPro.TMP_TextEventHandler
+c630e06821bcf12585d08c9c30fc4bd6 Assembly-CSharp.dll:.MainMenu
 47930f3b40e24ef5b3b5e3d9ada7097a Assembly-CSharp.dll:TMPro.Examples.Benchmark01
 5443c0870658e88a60bc147b52e90b05 Assembly-CSharp.dll:.TransitionMaster
 6ce96a26ebb08c1c540e8f923e380578 Assembly-CSharp.dll:.dialogueTesting
@@ -219,5 +221,3 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 8b1fe5dfdcf943fb3b72506b9f19335f Assembly-CSharp.dll:.EnvMapAnimator
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 b88b4fed91a3fb2262ad2a2dfa3a3560 Assembly-CSharp.dll:.TransitionMasterTesting
-c630e06821bcf12585d08c9c30fc4bd6 Assembly-CSharp.dll:.MainMenu
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MainMenuEvents
