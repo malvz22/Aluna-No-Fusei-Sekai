@@ -14,28 +14,28 @@ public class NovelController : MonoBehaviour
 		instance = this;
 	}
 
-    int activeGameFileNumber = 0;
+    string activeGameFileName = "";
     GAMEFILE activeGameFile = null;
     string activeChapterFile = "";
 
     // Use this for initialization
     void Start () 
 	{
-        LoadGameFile(0);
+        LoadGameFile(FileManager.LoadFile(FileManager.savPath + "savData/file.txt")[0]);
 	}
 
-    public void LoadGameFile(int gameFileNumber)
+    public void LoadGameFile(string gameFileName)
     {
-        activeGameFileNumber = gameFileNumber;
+        activeGameFileName = gameFileName;
 
-        string filePath = FileManager.savPath + "Resources/gameFiles/" + gameFileNumber.ToString() + ".txt";
+        string filePath = FileManager.savPath + "savData/gameFiles/" + gameFileName + ".txt";
 
         if (!System.IO.File.Exists(filePath))
         {
-            FileManager.SaveJSON(filePath, new GAMEFILE());
+            FileManager.SaveEncryptedJSON(filePath, new GAMEFILE(), keys);
         }
 
-        activeGameFile = FileManager.LoadJSON<GAMEFILE>(filePath);
+        activeGameFile = FileManager.LoadEncryptedJSON<GAMEFILE>(filePath, keys);
 
         //Load the file
         data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + activeGameFile.chapterName);
@@ -79,7 +79,7 @@ public class NovelController : MonoBehaviour
 
     public void SaveGameFile()
     {
-        string filePath = FileManager.savPath + "Resources/gameFiles/" + activeGameFileNumber.ToString() + ".txt";
+        string filePath = FileManager.savPath + "savData/gameFiles/" + activeGameFileName + ".txt";
 
         activeGameFile.chapterName = activeChapterFile;
         activeGameFile.chapterProgress = chapterProgress;
@@ -106,8 +106,12 @@ public class NovelController : MonoBehaviour
         //save the music to disk
         activeGameFile.music = AudioManager.activeSong != null ? AudioManager.activeSong.clip : null;
 
-        FileManager.SaveJSON(filePath, activeGameFile);
+        FileManager.SaveEncryptedJSON(filePath, activeGameFile, keys);
     }
+
+    //Temporary
+
+    public byte[] keys = new byte[3] { 23, 70, 194 };
 
 	
 	// Update is called once per frame
