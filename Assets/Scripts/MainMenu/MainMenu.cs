@@ -23,11 +23,6 @@ public class MainMenu : MonoBehaviour
         CloseSettingPanel();
     }
 
-    public void EndGame()
-    {
-        Application.Quit();
-    }
-
     public void ClickLoadGame()
     {
         loadGamePanel.gameObject.SetActive(true);

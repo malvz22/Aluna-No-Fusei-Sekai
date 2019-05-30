@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class NovelController : MonoBehaviour 
 {
@@ -421,16 +420,10 @@ public class NovelController : MonoBehaviour
 		case "next":
 			Next();
 			break;
-		case "EndStory":
-			endGame();
-			break;
 		}
 
 	}
-	void endGame()
-	{
-		SceneManager.LoadScene("EndStory");
-	}
+
 	void Command_Load(string chapterName)
 	{
 		NovelController.instance.LoadChapterFile(chapterName);

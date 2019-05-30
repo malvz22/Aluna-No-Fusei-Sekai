@@ -56,5 +56,3 @@ narrator "<b>After a while, Dylan sees someone’ shadow</b>"
 Dylan "Anyone there?! {a}Hello??"
 
 narrator "<i>Some myterious figure appears before Dylan</i>"
-
-EndStory

@@ -181,5 +181,3 @@ Tensho "So it has begun. Good work Aikara"
 Aikara "Should we?"
 
 Tensho "No, {a}let them struggle {a}*evil laugh* {a}it won’t be fun eating uncooked food."
-
-EndStory
