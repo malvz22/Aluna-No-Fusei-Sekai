@@ -31,9 +31,9 @@ public class BCFC : MonoBehaviour
 		{
 			if (activeImage != null && activeImage.texture != null)
 			{
-				MovieTexture mov = texture as MovieTexture;
-				if (mov != null)
-					mov.Stop();
+				//MovieTexture mov = texture as MovieTexture;
+				// if (mov != null)
+				// 	mov.Stop();
 			}
 
 			if (texture != null)
@@ -44,12 +44,12 @@ public class BCFC : MonoBehaviour
 				activeImage.texture = texture;
 				activeImage.color = GlobalF.SetAlpha(activeImage.color, 1f);
 
-				MovieTexture mov = texture as MovieTexture;
-				if (mov != null)
-				{
-					mov.loop = ifMovieThenLoop;
-					mov.Play();
-				}
+				//MovieTexture mov = texture as MovieTexture;
+				// if (mov != null)
+				// {
+				// 	mov.loop = ifMovieThenLoop;
+				// 	mov.Play();
+				// }
 			}
 			else
 			{
@@ -101,12 +101,12 @@ public class BCFC : MonoBehaviour
 					activeImage.texture = texture;
 					activeImage.color = GlobalF.SetAlpha(activeImage.color, 0f);
 
-					MovieTexture mov = texture as MovieTexture;
-					if (mov != null)
-					{
-						mov.loop = ifMovieThenLoop;
-						mov.Play();
-					}
+					//MovieTexture mov = texture as MovieTexture;
+					// if (mov != null)
+					// {
+					// 	mov.loop = ifMovieThenLoop;
+					// 	mov.Play();
+					// }
 				}
 			}
 			else

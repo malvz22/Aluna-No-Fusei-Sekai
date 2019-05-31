@@ -66,9 +66,9 @@ public class GlobalF : MonoBehaviour
 				}
 				else
 				{
-					MovieTexture mov = image.texture as MovieTexture;
-					if (mov != null)
-						mov.Stop();
+					//MovieTexture mov = image.texture as MovieTexture;
+					// if (mov != null)
+					// 	mov.Stop();
 					
 					allImages.RemoveAt (i);
 					DestroyImmediate (image.gameObject);

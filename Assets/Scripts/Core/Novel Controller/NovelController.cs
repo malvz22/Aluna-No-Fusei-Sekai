@@ -22,15 +22,17 @@ public class NovelController : MonoBehaviour
     // Use this for initialization
     void Start () 
 	{
+		
         LoadGameFile(FileManager.LoadFile(FileManager.savPath + "savData/file.txt")[0]);
 	}
 
     public void LoadGameFile(string gameFileName)
     {
+	
         activeGameFileName = gameFileName;
 
         string filePath = FileManager.savPath + "savData/gameFiles/" + gameFileName + ".txt";
-
+		Debug.Log(filePath);
         if (!System.IO.File.Exists(filePath))
         {
             FileManager.SaveEncryptedJSON(filePath, new GAMEFILE(), keys);
@@ -38,8 +40,20 @@ public class NovelController : MonoBehaviour
 
         activeGameFile = FileManager.LoadEncryptedJSON<GAMEFILE>(filePath, keys);
 
+		Debug.Log(FileManager.savPath +"Story/" + activeGameFile.chapterName);
         //Load the file
-        data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + activeGameFile.chapterName);
+		
+		data = FileManager.LoadFileFromResources("Story/" + activeGameFile.chapterName);
+		Debug.Log(data.Count);
+		int count = data.Count;
+		for(int i=0;i<data.Count;i++)
+		{
+			Debug.Log(data[i]+"\n");
+		}
+		//data.RemoveRange(count,1);
+		Debug.Log(data.Count);
+        //data = FileManager.LoadFile(FileManager.savPath +"Resources/Story/" + activeGameFile.chapterName);
+		//data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + activeGameFile.chapterName);
         activeChapterFile = activeGameFile.chapterName;
         cachedLastSpeaker = activeGameFile.cachedLastSpeaker;
 
@@ -135,8 +149,10 @@ public class NovelController : MonoBehaviour
 
 	public void LoadChapterFile(string fileName)
 	{
+		Debug.Log("ini masuk");
         activeChapterFile = fileName;
-
+		
+		//data = data = FileManager.LoadFileFromResources("Story/" + fileName);
 		data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + fileName);
 		cachedLastSpeaker = "";
 
@@ -157,7 +173,16 @@ public class NovelController : MonoBehaviour
 	/// </summary>
 	public void Next()
 	{
+		if(data.Count < chapterProgress)
+		{
+			stopchoicedforce();
+		}else
+		{
+			//Debug.Log("chap = "+chapterProgress +" ,story = "+data[30]);
+		Debug.Log("next chap = "+chapterProgress +" ,story = "+data[chapterProgress]);
 		_next = true;
+		}
+		
 	}
 
 	public bool isHandlingChapterFile {get{return handlingChapterFile != null;}}
@@ -168,7 +193,7 @@ public class NovelController : MonoBehaviour
 		//the progress through the lines in this chapter.
 		chapterProgress = 0;
        
-		while(chapterProgress < data.Count)
+		while(chapterProgress <= data.Count)
 		{
             //we need a way of knowing when the player wants to advance. We need a "next" trigger. Not just a keypress. But something that can be triggerd
             //by a click or a keypress
@@ -197,31 +222,35 @@ public class NovelController : MonoBehaviour
 			
 		handlingChapterFile = null;
 	}
-
+		bool gatheringChoices =false;
 	IEnumerator HandlingChoiceLine(string line)
 	{
 		string title = line.Split('"')[1];
 		List<string> choices = new List<string>();
 		List<string> actions = new List<string>();
 
-		bool gatheringChoices = true;
+		
+		gatheringChoices = true;
 		while(gatheringChoices)
 		{
 			chapterProgress++;
 			line = data[chapterProgress];
-
+			//Debug.Log(line);
+			Debug.Log("chap = "+chapterProgress +" ,story = "+data[chapterProgress]);
 			if (line == "{")
-				continue;
+			{
+								continue;
+			}
+				
 
 			line = line.Replace("    ","");//remove the tabs that have become quad spaces.
-
+			Debug.Log("masuk");
 			if (line != "}")
-			{
-				choices.Add(line.Split('"')[1]);
-				actions.Add(data[chapterProgress+1].Replace("    ",""));
-				chapterProgress++;
-			}
-			else
+            {
+				//Debug.Log("chap = "+chapterProgress +" ,story = "+data[chapterProgress]);
+                NewMethod(line, choices, actions);
+            }
+            else
 			{
 				gatheringChoices = false;
 			}
@@ -247,7 +276,34 @@ public class NovelController : MonoBehaviour
 		}
 	}
 
-	void HandleLine(string rawLine)
+    private void NewMethod(string line, List<string> choices, List<string> actions)
+    {
+        try
+        {
+			Debug.Log("line "+line);
+			Debug.Log("choices "+data[chapterProgress]);
+			Debug.Log("action "+data[chapterProgress + 1]);
+            choices.Add(line.Split('"')[1]);
+            actions.Add(data[chapterProgress + 1].Replace("    ", ""));
+			//Debug.Log("choices "+choices);
+			//Debug.Log("actions "+actions);
+            chapterProgress++;
+			
+        }
+        catch (System.IndexOutOfRangeException ex)
+        {
+            //Debug.Log();
+            Debug.Log("error");
+            chapterProgress++;
+        }
+    }
+	public void stopchoicedforce()
+	{
+				Debug.Log("masuk2");
+				gatheringChoices = false;
+			
+	}
+    void HandleLine(string rawLine)
 	{
 		CLM.LINE line = CLM.Interpret(rawLine);
 
@@ -423,7 +479,11 @@ public class NovelController : MonoBehaviour
 			break;
 		case "EndStory":
 			endGame();
+			break;		
+		case "}":
+			stopchoicedforce();
 			break;
+
 		}
 
 	}

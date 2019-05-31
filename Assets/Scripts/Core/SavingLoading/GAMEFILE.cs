@@ -24,7 +24,7 @@ public class GAMEFILE
     public GAMEFILE()
     {
         this.chapterName = "Chapter0_start";
-        this.chapterProgress = 0;
+         this.chapterProgress = 0;//klo chapterProgressdiganti, ini juga jangan lupa 
         this.cachedLastSpeaker = "";
 
         this.background = null;

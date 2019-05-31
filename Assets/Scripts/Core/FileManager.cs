@@ -182,6 +182,27 @@ public class FileManager : MonoBehaviour
 			return new List<string>(){errorMessage};
 		}
 	}
+	public static List<string> LoadFileFromResources(string filePath, bool removeBlankLines = true)
+	{
+		//filePath = AttemptCorrectFilePath(filePath);
+		TextAsset asset = Resources.Load<TextAsset>(filePath);
+		//string path = asset.text;
+		if (/* File.Exists(filePath)*/ asset != null)
+		{
+			//File = asset;
+			
+			//List<string> lines = ArrayToList(File.ReadAllLines(filePath), removeBlankLines);
+			List<string> lines = ArrayToList(asset.text.Split('\n'), removeBlankLines);
+			return lines;
+		}
+		else
+		{
+			string errorMessage = "ERR! File "+filePath+" does not exist!";
+			Debug.LogError(errorMessage);
+			File.WriteAllText(filePath, "file.txt");
+			return new List<string>(){filePath};
+		}
+	}
 
     /// <summary>
 	/// Read a text asset and return a list of lines
@@ -320,6 +341,7 @@ public class FileManager : MonoBehaviour
         return ob;
     }
 
+	
     /// <summary>
 	/// XORs an array of bytes to encrypt or decrypt it through the use of cycling keys. 
 	/// </summary>
