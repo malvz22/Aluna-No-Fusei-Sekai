@@ -109,11 +109,17 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\MultiKeyDictionary.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Reporter.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\ReporterGUI.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\ReporterMessageReceiver.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Test\Rotate.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Test\TestReporter.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\Resources\Story\Chapter2_a.txt" />
      <None Include="Assets\Resources\Story\story_b1a.txt" />
-     <None Include="Assets\savData\file.txt" />
+     <None Include="Assets\Resources\file.txt" />
      <None Include="Assets\Resources\Story\story_b1b.txt" />
      <None Include="Assets\Resources\Story\story_b2.txt" />
      <None Include="Assets\Resources\Story\story_a2.txt" />
@@ -122,6 +128,7 @@
      <None Include="Assets\Resources\Story\Chapter0_start 1.txt" />
      <None Include="Assets\Resources\Story\Chapter0_start.txt" />
      <None Include="Assets\Resources\Story\Chapter2_bb.txt" />
+     <None Include="Assets\savData\gameFiles\Assets\savData\file.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\Resources\Story\TestingLineSegmentation.txt" />
      <None Include="Assets\Resources\Story\Chapter2_ba.txt" />
@@ -143,12 +150,12 @@
      <None Include="Assets\Resources\Story\movetest.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\savData\gameFiles\Assets\savData\file.txt.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\savData\gameFiles\auto\autoSave.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-     <None Include="Assets\Resources\gameFiles\0.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Resources\Story\story_1.txt" />
@@ -157,6 +164,7 @@
      <None Include="Assets\Resources\Story\story_a2bb.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\Resources\Story\story_a2a.txt" />
+     <None Include="Assets\StreamingAssets\build_info.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Game Project(GitHub)/Aluna-No-Fusei-Sekai/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

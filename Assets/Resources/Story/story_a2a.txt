@@ -1,60 +1,33 @@
 narrator "Kaleyna and Dylan walks into the Cafetaria" setBackground(null) exit(Kaleyna)
-
 setBackground(schoolPark)
 Dylan "Hey what is that?"
-
 enter(Kaleyna) setBody(Kaleyna,casualA) setFace(Kaleyna,scaredA)
 Kaleyna "What is what?"
-
 Dylan "That over there by the park!"
-
 setBody(Kaleyna,specialA) setFace(Kaleyna,wryA)
 Kaleyna "Hmm.."
-
 narrator "As they both walked towards the pointed area, Dylan’s phone received a call by an anonymous contact number."
-
 "As Dylan was about to pick up the call, the phone stopped ringing."
-
 Dylan "Huh? Who was that? Kay Chan, do you know this number?"
-
 Kaleyna "Hmm I don’t recall having that contact number."
-
 Dylan "Oh well, anyways…"
-
 narrator "Dylan received a mysterious message. {a}Dylan received a message saying {a}“Are you the young Hero?”"
-
 Dylan "What? No."
-
 Kaleyna "What was that all about?"
-
 Dylan "I don’t know.."
-
 narrator "The same message popped up again but this time it won’t go away. {a}Dylan forcibly accepts the message"
-
 Dylan "That was super weird"
-
 setFace(Kaleyna,scaredA)
 Kaleyna "Uhh, Dylan what is happening to you?"
-
 Dylan "Nothing. {a}I’m..(Looks at his hand) {a}ehhh!!? {a}I’m turning invisible!"
-
 setBackground(null) exit(Kaleyna)
-
 narrator "<i>And suddenly Dylan disappeared.</i>"
-
 narrator "<i>He found himself stranded in the middle of a forest</i>"
 setBackground(forest)
-
 Dylan "Where am I? {a}What is this place? {a}I feel very different from earlier, I can feel huge amount of energy swelling inside of me. {a}But, what is the meaning of this?"
-
 "Hello!"
-
 "(Oh right! What dumb idiot would shout in the middle of a forest in another world where you know nothing and no one.)"
-
 narrator "<b>After a while, Dylan sees someone’ shadow</b>"
-
 Dylan "Anyone there?! {a}Hello??"
-
 narrator "<i>Some myterious figure appears before Dylan</i>"
-
 EndStory

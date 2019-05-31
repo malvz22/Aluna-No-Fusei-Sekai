@@ -66,33 +66,44 @@ public class FileManager : MonoBehaviour
 	public static bool TryCreateDirectoryFromPath(string path)
 	{
 		string directoryPath = path;
+		//string directoryPath = AttemptCorrectFilePath(path);
+		Debug.Log("path = "+directoryPath);
 
 		if (Directory.Exists(path) || File.Exists(path)) return true;
-		if (path.Contains("."))
-		{
-			directoryPath = GetDirectoryFromPath (path);
-			if (Directory.Exists(directoryPath)) return true;
-		}
 
-		if (directoryPath != "" && !directoryPath.Contains("."))
-		{
+		//untuk semua comment harus dilakukan di android ditutup
+		// if (path.Contains("."))
+		// {
+		// 	directoryPath = GetDirectoryFromPath (path);
+		// 	if (Directory.Exists(directoryPath)) return true;
+		// }
+
+		// if (directoryPath != "" && !directoryPath.Contains("."))
+		// {
 			print (directoryPath);
 			try
 			{
-				Directory.CreateDirectory(directoryPath);
+				try{
+				Debug.Log("path = "+directoryPath);
+				Directory.CreateDirectory(directoryPath +".txt");
+				//Directory.CreateDirectory(directoryPath);
 				return true;
+				}catch (IOException e)
+			{
+				return true;
+			}
 			}
 			catch (System.Exception e)
 			{
 				Debug.LogError ("Could not create Directory!\nERROR DETAILS: " + e.ToString ());
 				return false;
 			}
-		}
-		else
-		{
-			Debug.LogError("Directory was invalid - " + directoryPath + "\npath="+path + "\ndirectoryPath="+directoryPath);
-			return false;
-		}
+		//}
+		// else
+		// {
+		// 	Debug.LogError("Directory was invalid - " + directoryPath + "\npath="+path + "\ndirectoryPath="+directoryPath);
+		// 	return false;
+		// }
 	}
 
 	/// <summary>
@@ -120,7 +131,8 @@ public class FileManager : MonoBehaviour
 	/// </summary>
 	public static void SaveFile(string filePath, List<string> lines)
 	{
-		filePath = AttemptCorrectFilePath(filePath);
+		//filePath = AttemptCorrectFilePath(filePath);
+		
 
 		//If the directory does not exist, try to create it. Prevent continuation if path was not valid.
 		if (!TryCreateDirectoryFromPath(filePath))
@@ -168,7 +180,8 @@ public class FileManager : MonoBehaviour
 	/// <param name="filePath">File path.</param>
 	public static List<string> LoadFile(string filePath, bool removeBlankLines = true)
 	{
-		filePath = AttemptCorrectFilePath(filePath);
+		//filePath = AttemptCorrectFilePath(filePath);
+	
 
 		if (File.Exists(filePath))
 		{
@@ -179,7 +192,7 @@ public class FileManager : MonoBehaviour
 		{
 			string errorMessage = "ERR! File "+filePath+" does not exist!";
 			Debug.LogError(errorMessage);
-			return new List<string>(){errorMessage};
+			return new List<string>(){filePath};
 		}
 	}
 	public static List<string> LoadFileFromResources(string filePath, bool removeBlankLines = true)

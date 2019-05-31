@@ -1,48 +1,29 @@
-narrator "<i>Dylan arrives at school.</i>" setBackground(schoolPark)
-
-enter(Nella) setBody(Nella,casualAngle) setFace(Nella,happyA) setPosition(Nella,0.2) enter(Kaleyna) setBody(Kaleyna,casualF) setFace(Kaleyna,smileF) setPosition(Kaleyna,0.8)
-
+narrator "<i>Dylan arrives at school.</i>" 
+setBackground(schoolPark) enter(Nella) setBody(Nella,casualAngle) setFace(Nella,happyA) setPosition(Nella,0.2) enter(Kaleyna) setBody(Kaleyna,casualF) setFace(Kaleyna,smileF) setPosition(Kaleyna,0.8)
 Kaleyna "Hello Nella!"
-
 Dylan "(So this girl is Nella)"
-
 Nella "Hello! This is my brother, Dylan. He is the new transfer student."
 "Dylan, this is Kaleyna, she will be one of your classmate."
-
 Dylan "Oh? {a}Hi, nice to meet you."
-
 Kaleyna "Likewise Dylan."
-
 narrator "<i>They walk to their classes</i>" exit(Nella) exit(Kaleyna)
-
 setBackground(null)
-
 setBackground(classRoom)
-
 Teacher "Good morning everyone! {a}We have a new transfer student today, he will join us from today. {a}Dylan, introduce yourself."
-
 Dylan "(My heart is pounding of nervousness, well I couldn’t help it. I am a little bit introvert.)"
-
 "Uh-Uhh Hello everyone! {a}I’m Dylan and I will be joining this class from today onward, I hope we can work together. {a}Thank you."
-
 narrator "<i>The class applauds</i>"
-
 Teacher "You may sit down."
-
 Dylan "(Oh gosh, what have I gotten myself into.)"
-
 setBackground(null)
-
 narrator "<i>Few hours later, the session ends and the class dismissed</i>"
-
 setBackground(classRoom) enter(Kaleyna) setFace(Kaleyna,smileF) setBody(Kaleyna,casualF) setPosition(Kaleyna,0.5)
-
 Kaleyna "Hey, let’s have lunch together."
-
 choice "Have lunch together with Kaleyna?"
 {
+
   "Uhm, Okay I guess?"
-    Load(story_a2a)
+  Load(story_a2a)
   "I’m sorry, another time. I have an appointment"
-    Load(story_a2b)
+  Load(story_a2b)
 }

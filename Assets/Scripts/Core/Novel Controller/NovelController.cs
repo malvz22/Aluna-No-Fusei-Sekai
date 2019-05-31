@@ -22,16 +22,20 @@ public class NovelController : MonoBehaviour
     // Use this for initialization
     void Start () 
 	{
-		
+		//LoadGameFile(FileManager.LoadFile(FileManager.savPath + "savData/file")[0]);
+		//LoadGameFile(FileManager.LoadFileFromResources("file.txt")[0]);
         LoadGameFile(FileManager.LoadFile(FileManager.savPath + "savData/file.txt")[0]);
+		//LoadGameFile(FileManager.LoadFileFromResources("Story/" + activeGameFile.chapterName));
 	}
 
     public void LoadGameFile(string gameFileName)
     {
 	
+		Debug.Log(gameFileName);
         activeGameFileName = gameFileName;
-
-        string filePath = FileManager.savPath + "savData/gameFiles/" + gameFileName + ".txt";
+		string filePath = FileManager.savPath + "savData/gameFiles/" + gameFileName ;
+		//string filePath = gameFileName;
+        //string filePath = FileManager.savPath + "savData/gameFiles/" + gameFileName + ".txt";
 		Debug.Log(filePath);
         if (!System.IO.File.Exists(filePath))
         {
@@ -46,10 +50,10 @@ public class NovelController : MonoBehaviour
 		data = FileManager.LoadFileFromResources("Story/" + activeGameFile.chapterName);
 		Debug.Log(data.Count);
 		int count = data.Count;
-		for(int i=0;i<data.Count;i++)
-		{
-			Debug.Log(data[i]+"\n");
-		}
+		// for(int i=0;i<data.Count;i++)
+		// {
+		// 	Debug.Log(data[i]+"\n");
+		// }
 		//data.RemoveRange(count,1);
 		Debug.Log(data.Count);
         //data = FileManager.LoadFile(FileManager.savPath +"Resources/Story/" + activeGameFile.chapterName);
@@ -152,8 +156,8 @@ public class NovelController : MonoBehaviour
 		Debug.Log("ini masuk");
         activeChapterFile = fileName;
 		
-		//data = data = FileManager.LoadFileFromResources("Story/" + fileName);
-		data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + fileName);
+		data = data = FileManager.LoadFileFromResources("Story/" + fileName);
+		//data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + fileName);
 		cachedLastSpeaker = "";
 
 		if (handlingChapterFile != null)
@@ -250,7 +254,7 @@ public class NovelController : MonoBehaviour
 				//Debug.Log("chap = "+chapterProgress +" ,story = "+data[chapterProgress]);
                 NewMethod(line, choices, actions);
             }
-            else
+            else if(line == "}")
 			{
 				gatheringChoices = false;
 			}

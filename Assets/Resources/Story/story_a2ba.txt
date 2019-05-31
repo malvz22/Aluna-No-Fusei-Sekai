@@ -1,9 +1,6 @@
 narrator "<i>You decided to <b>pick up your phone</b></i>"
-
 "<i>Suddenly a portal came out from the phone and created a hole around his bench and he fell into the depths.</i>"
-
 "He was transferred to another world"
-
 setBackground(null)
-
 Dylan "Where am I? Why did I fell and end up here? Something is really odd, I feel power surging inside me."
+EndStory

@@ -1,9 +1,6 @@
 narrator "The ringing ends and after a few minutes, his phone levitates and shoots mysterious laser that circled around creating dark blue colored hollow ground around the bench and caused him to fall into the dephts."
-
 setBackground(null)
-
 Dylan "Where am I? Why did I fell and end up here?"
-
 narrator "Then Dylan sees someone's shadow"
-
 Dylan "Huh? Who's There?"
+EndStory
