@@ -1,22 +1,13 @@
 Dylan "Who are you?"
-
 Unknown "What?? Come on there is no time to joke around."
-
 Dylan "I am confused right now, {a}I think I have been summoned here by a mysterious person."
-
 Unknown "What!? How dare you call mom a mysterious person."
-
 Dylan "Oh.. Sorry, but really who are you?"
-
 narrator "<i>A <b>girl</b> opened the door</i>" enter(Nella) setBody(Nella,casualForward) setFace(Nella,seriousF)
-
 Nella "What are you talking about? {a}I’m <b>Nella</b>, your little sister. What is your problem?!"
-
 Dylan "I’m sorry, but I really don’t remember anything. {a}I don’t know where I am, I don’t know anyone here."
-
 setFace(Nella,puzzledF)
 Nella "*sigh* Let’s go."
-
 choice "What will you do?"
 {
   "Refuse to go"
