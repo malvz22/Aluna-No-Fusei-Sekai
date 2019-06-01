@@ -21,6 +21,7 @@ setFace(Nella,puzzledF)
 Doctor "Oh, I see. You really do have a problem. Let me help."
 choice ""
 {
+
   "No!!"
     Load(story_b1aa)
   "Please do, maybe you may know something"
