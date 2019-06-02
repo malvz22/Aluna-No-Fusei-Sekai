@@ -22,21 +22,20 @@ public class NovelController : MonoBehaviour
     // Use this for initialization
     void Start () 
 	{
-		//LoadGameFile(FileManager.LoadFile(FileManager.savPath + "savData/file")[0]);
-		//LoadGameFile(FileManager.LoadFileFromResources("file.txt")[0]);
-        LoadGameFile(FileManager.LoadFile(FileManager.savPath + "savData/file.txt")[0]);
-		//LoadGameFile(FileManager.LoadFileFromResources("Story/" + activeGameFile.chapterName));
+		LoadGameFile(FileManager.LoadFile(FileManager.savPath + "file.txt")[0]);
+        //LoadGameFile(FileManager.LoadFile(FileManager.savPath + "savData/file.txt")[0]);
+		
 	}
 
     public void LoadGameFile(string gameFileName)
     {
 	
-		Debug.Log(gameFileName);
+		Debug.Log("gfn = "+gameFileName);
         activeGameFileName = gameFileName;
-		string filePath = FileManager.savPath + "savData/gameFiles/" + gameFileName ;
-		//string filePath = gameFileName;
+		//string filePath = FileManager.savPath + "savData/gameFiles/" + gameFileName ;
+		string filePath = gameFileName;
         //string filePath = FileManager.savPath + "savData/gameFiles/" + gameFileName + ".txt";
-		Debug.Log(filePath);
+		Debug.Log("fp = "+filePath);
         if (!System.IO.File.Exists(filePath))
         {
             FileManager.SaveEncryptedJSON(filePath, new GAMEFILE(), keys);
@@ -94,11 +93,14 @@ public class NovelController : MonoBehaviour
         handlingChapterFile = StartCoroutine(HandlingChapterFile());
 
         chapterProgress = activeGameFile.chapterProgress;
+		Next();
     }
 
     public void SaveGameFile()
     {
-        string filePath = FileManager.savPath + "savData/gameFiles/" + activeGameFileName + ".txt";
+		string filePath = activeGameFileName ;
+        //string filePath = FileManager.savPath + "savData/gameFiles/" + activeGameFileName + ".txt";
+		Debug.Log(filePath);
 
         activeGameFile.chapterName = activeChapterFile;
         activeGameFile.chapterProgress = chapterProgress;
@@ -147,6 +149,13 @@ public class NovelController : MonoBehaviour
         {
             SaveGameFile();
         }
+
+		if(_autonext == false)
+		{
+			Debug.Log("auto next stop");
+			StopCoroutine(AutoRun());
+		}
+		
 	}
 
     
@@ -185,6 +194,39 @@ public class NovelController : MonoBehaviour
 			//Debug.Log("chap = "+chapterProgress +" ,story = "+data[30]);
 		Debug.Log("next chap = "+chapterProgress +" ,story = "+data[chapterProgress]);
 		_next = true;
+		_autonext = false;
+		}
+		
+	}
+	bool _autonext = false;
+
+	public void AutoNext(){
+		
+		if(_autonext == true)
+		{
+			
+			_autonext= false;
+			
+
+		}else
+		if (_autonext == false)
+		{Debug.Log("autorun jalan");
+			
+			_autonext= true;
+			StartCoroutine(AutoRun());
+		}
+	}
+	// public void auto(){
+		
+	// 	StartCoroutine(AutoRun());	
+	// }
+	IEnumerator AutoRun()
+	{
+		while(_autonext)
+		{
+			yield return new WaitForSeconds(1);
+
+			_next = true;
 		}
 		
 	}
@@ -229,6 +271,7 @@ public class NovelController : MonoBehaviour
 		bool gatheringChoices =false;
 	IEnumerator HandlingChoiceLine(string line)
 	{
+		_autonext = false;
 		string title = line.Split('"')[1];
 		List<string> choices = new List<string>();
 		List<string> actions = new List<string>();

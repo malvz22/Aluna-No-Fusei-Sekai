@@ -20,9 +20,9 @@ public class FileManager : MonoBehaviour
 		get 
 		{
 			#if UNITY_EDITOR
-			return "Assets/";
+			return "Assets/"; // jika di unity 
 			#else
-			return Application.persistentDataPath + "/";
+			return Application.persistentDataPath + "/"; // jika di android / seharusnya di pc
 			#endif
 		}
 	}	
@@ -185,8 +185,10 @@ public class FileManager : MonoBehaviour
 
 		if (File.Exists(filePath))
 		{
-			List<string> lines = ArrayToList(File.ReadAllLines(filePath), removeBlankLines);
-			return lines;
+			Debug.Log("ada");
+			// List<string> lines = ArrayToList(File.ReadAllLines(filePath), removeBlankLines);
+			// return lines;
+			return new List<string>(){filePath};
 		}
 		else
 		{
@@ -245,6 +247,7 @@ public class FileManager : MonoBehaviour
 
     public static void SaveEncryptedJSON(string filePath, object classToSave, byte[] encryptionKeys)
     {
+		Debug.Log("encrypted = "+filePath);
         string jsonString = JsonUtility.ToJson(classToSave);
 
         //encrypt the string before saving to file
@@ -294,6 +297,7 @@ public class FileManager : MonoBehaviour
 
     public static T LoadEncryptedJSON<T>(string filePath, byte[] encryptionKeys)
     {
+		Debug.Log("load encrypt = "+filePath);
         byte[] stringBytes = LoadComposingBytes(filePath);
 
         //decrypt the string before attempting to convert it
