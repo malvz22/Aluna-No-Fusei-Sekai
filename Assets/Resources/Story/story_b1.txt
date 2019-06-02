@@ -10,7 +10,6 @@ setFace(Nella,puzzledF)
 Nella "*sigh* Let’s go."
 choice "What will you do?"
 {
-  
   "Refuse to go"
     Load(story_b1a)
   "Go along"
