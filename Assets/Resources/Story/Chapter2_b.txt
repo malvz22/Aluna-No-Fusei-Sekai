@@ -1,30 +1,21 @@
 narrator "<i>And so, Dylan, Nella and the doctor came into a new world where they know nothing about. As they started moving around they met a mysterious person whom claimed herself as The Guardian. What mysteries will unveil? Only time will tell.</i>"
-
-setBackground(forest) enter(Doctor) enter(Nella) setBody(Nella,specialAngle) setFace(Nella,bashfulA) setPosition(Nella,0.2) setPosition(Doctor,0.8) next
-
+setBackground(forest) enter(Doctor) enter(Nella) setBody(Nella,normalPose) setFace(Nella,thinking) setBody(Doctor,fifthPose) setFace(Doctor,fifthPoseEmotion) setPosition(Nella,0.2) setPosition(Doctor,0.8) next
 Doctor "I believed she just told us she would guide us."
-
 Nella "Then she disappeared..."
-
+setBody(Doctor,fourthPose) setFace(Doctor,surprised) next
 Doctor "Hey, what is this?"
-
 "(Picks up a carved-stone like piece on the ground)"
-
 Dylan "Trash? I don’t know"
-
+setFace(Doctor,thinkNs)
 Doctor "I believe this could be important."
-
 Dylan "For what? Stone skipping?"
-
-setFace(Nella,smileA) next
+setFace(Nella,smile) next
 Nella "I think this could be useful for you."
-
 Dylan "What makes you think that?"
-
 Doctor "Yeah, nothing in this realm make sense but probably we should bring this along."
-
 choice ""
 {
+
   "Throw it away"
     Load(Chapter2_ba)
   "Bring it along"

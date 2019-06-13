@@ -12,7 +12,7 @@ Unknown "Dylan! {a}Dylan! {a}Wake up! {a}It’s time for you to go to school."
 Dylan "Huh? Who is that? I have school? {a}This is bad.. I don’t know what’s going on and I don’t know anyone."
 Unknown "Dylan! Hey you are going to be late!"
 choice "Uhmm what should I do?"
-{ 
+{
 
   "Get up and respond"
   Load(story_a1)

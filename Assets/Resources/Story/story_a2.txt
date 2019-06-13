@@ -1,8 +1,9 @@
-narrator "<i>Dylan arrives at school.</i>" 
-setBackground(schoolPark) enter(Nella) setBody(Nella,casualAngle) setFace(Nella,happyA) setPosition(Nella,0.2) enter(Kaleyna) setBody(Kaleyna,casualF) setFace(Kaleyna,smileF) setPosition(Kaleyna,0.8)
+narrator "<i>Dylan arrives at school.</i>"
+setBackground(schoolPark) enter(Nella) setBody(Nella,normalPose) setFace(Nella,giggle) setPosition(Nella,0.2) enter(Kaleyna) setBody(Kaleyna,casualF) setFace(Kaleyna,smileF) setPosition(Kaleyna,0.8) next
 Kaleyna "Hello Nella!"
 Dylan "(So this girl is Nella)"
 Nella "Hello! This is my brother, Dylan. He is the new transfer student."
+setFace(Nella,smile)
 "Dylan, this is Kaleyna, she will be one of your classmate."
 Dylan "Oh? {a}Hi, nice to meet you."
 Kaleyna "Likewise Dylan."
@@ -17,7 +18,7 @@ Teacher "You may sit down."
 Dylan "(Oh gosh, what have I gotten myself into.)"
 setBackground(null)
 narrator "<i>Few hours later, the session ends and the class dismissed</i>"
-setBackground(classRoom) enter(Kaleyna) setFace(Kaleyna,smileF) setBody(Kaleyna,casualF) setPosition(Kaleyna,0.5)
+setBackground(classRoom) enter(Kaleyna) setFace(Kaleyna,smileF) setBody(Kaleyna,casualF) setPosition(Kaleyna,0.5) next
 Kaleyna "Hey, let’s have lunch together."
 choice "Have lunch together with Kaleyna?"
 {

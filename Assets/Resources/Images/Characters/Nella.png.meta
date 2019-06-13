@@ -2,30 +2,16 @@ fileFormatVersion: 2
 guid: 90dd48d359e7f6c48a8e4ef1563869f4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: casualForward
-    21300002: specialForward
-    21300004: casualAngle
-    21300006: specialAngle
-    21300008: seriousF
-    21300010: seriousA
-    21300012: blushF
-    21300014: blushA
-    21300016: happyF
-    21300018: happyA
-    21300020: bashfulF
-    21300022: bashfulA
-    21300024: laughF
-    21300026: laughA
-    21300028: puzzledF
-    21300030: puzzledA
-    21300032: shockedF
-    21300034: shockedA
-    21300036: surprisedF
-    21300038: surprisedA
-    21300040: blush2F
-    21300042: blush2A
-    21300044: smileF
-    21300046: smileA
+    21300000: prepareToBattle
+    21300002: normalPose
+    21300004: gasping
+    21300006: crossedArms
+    21300008: smile
+    21300010: thinking
+    21300012: shocked
+    21300014: pokerFace
+    21300016: giggle
+    21300018: angry
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -55,7 +41,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -105,17 +91,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
     buildTarget: Android
     maxTextureSize: 4096
     resizeAlgorithm: 0
@@ -130,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: casualForward
+      name: prepareToBattle
       rect:
         serializedVersion: 2
-        x: 4
-        y: 7957
-        width: 478
-        height: 717
+        x: 3
+        y: 3868
+        width: 479
+        height: 961
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,59 +119,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 033eb0ca6bf566647aaf9f88150f005f
+      spriteID: e20f01608ecdf414981a682114ca234a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: specialForward
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 7957
-        width: 478
-        height: 717
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74b324e5ea36b3a4cbc4d0e2627b89eb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: casualAngle
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 7234
-        width: 478
-        height: 717
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81daf5e4b2ecb3944a9062028ef62a50
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: specialAngle
+      name: normalPose
       rect:
         serializedVersion: 2
         x: 487
-        y: 7234
-        width: 478
-        height: 716
+        y: 3868
+        width: 479
+        height: 961
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,19 +139,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1444171e0314160439c825d5a16b999d
+      spriteID: eb5343b061511f74cb72a09449ea775c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: seriousF
+      name: gasping
       rect:
         serializedVersion: 2
-        x: 4
-        y: 6511
-        width: 478
-        height: 718
+        x: 3
+        y: 2902
+        width: 479
+        height: 961
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,59 +159,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baed425ada99dc346aa6db38e6df86b4
+      spriteID: 77e55520d1d228e4b89d0529a5054ae4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: seriousA
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 6511
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1c9dd34ce504a04a8986e6bed21a6ad
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blushF
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 5788
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6d2858484e1b9d4cb6a04457c2c4909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blushA
+      name: crossedArms
       rect:
         serializedVersion: 2
         x: 487
-        y: 5788
-        width: 478
-        height: 718
+        y: 2902
+        width: 479
+        height: 961
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,19 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c3f9708aaa279d4980ff7e36301cf1b
+      spriteID: 40e7df6eea74ae3458e6860ddc3c9010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happyF
+      name: smile
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5065
-        width: 478
-        height: 718
+        x: 3
+        y: 1936
+        width: 479
+        height: 961
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,59 +199,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9845985f7abe7594c83cf217cfd26a47
+      spriteID: 5df6c02face06904ab2b0d358c74965e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happyA
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 5065
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e74ea756f9d3e494baed4d526eee3380
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bashfulF
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 4342
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 630e6c00487e5bf4592a2414a08724c1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bashfulA
+      name: thinking
       rect:
         serializedVersion: 2
         x: 487
-        y: 4342
-        width: 478
-        height: 718
+        y: 1936
+        width: 479
+        height: 961
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,19 +219,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9afd3a39c1b6a340b68f9f31258f221
+      spriteID: c6c9a1636276ac140bf4137f887cbf35
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laughF
+      name: shocked
       rect:
         serializedVersion: 2
-        x: 4
-        y: 3619
-        width: 478
-        height: 718
+        x: 3
+        y: 970
+        width: 479
+        height: 961
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,59 +239,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a12bd1f30bf291b40a279f4fea606d3b
+      spriteID: 68433d3f28384a549a53e997469b8f1e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laughA
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 3619
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 653ce58f421026143b50b2218d8d558b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzledF
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 2896
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1e4ab07b47aede40bb3502100d25136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzledA
+      name: pokerFace
       rect:
         serializedVersion: 2
         x: 487
-        y: 2896
-        width: 478
-        height: 718
+        y: 970
+        width: 479
+        height: 961
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,139 +259,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 445c253f275091b49ac024d4cfa3acca
+      spriteID: 070ca4b92181f7741bd33f1e976fbdf7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shockedF
+      name: giggle
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2173
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9aee8f1b66447f043bbe26f346a93ea9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shockedA
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 2173
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de0bfb80cd10ebb4894adf6f4e366524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: surprisedF
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 1450
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a268a35ca685a4943aab2f25aca98af0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: surprisedA
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 1450
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad144df5baa72bc429ab605df4a36ecd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blush2F
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 727
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47e4388eccbc0cc40bd6621ef2ed85ea
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blush2A
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 727
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a789fdb94ff3a54b9b04b24a6a298b4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smileF
-      rect:
-        serializedVersion: 2
-        x: 4
+        x: 3
         y: 4
-        width: 478
-        height: 718
+        width: 479
+        height: 961
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,27 +279,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1b8f33ba947f0044a68cb00d556b3d8
+      spriteID: 6715c99b58eb75b41b6ed8c368e42086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smileA
+      name: angry
       rect:
         serializedVersion: 2
         x: 487
         y: 4
-        width: 478
-        height: 718
+        width: 479
+        height: 961
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce4cc5162f260194396e48ce3e7386b5
+      spriteID: 0f80a238b1c53154a8120e40dc9c33a8
       vertices: []
       indices: 
       edges: []
@@ -612,7 +307,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1c43bc190dace0f4583c3da7e450fd7a
+    spriteID: 6bb5bdeb823c126498a2b7b15bbee5c6
     vertices: []
     indices: 
     edges: []
