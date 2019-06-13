@@ -1,9 +1,9 @@
 narrator "Dylan gets out of the room and Nella chased after him" exit(Doctor) exit(Nella) setBackground(null)
 Dylan "I need some answers about that dream."
-enter (Nella) setBody(Nella,normalPose) setFace(Nella,shocked) setPosition(Nella,0.5) next
+enter (Nella) setBody(Nella,casualAngle) setFace(Nella,bashfulA) setPosition(Nella,0.5) next
 Nella "Hey, wait for me! Where are you going?"
 Dylan "Nella, I am really confused right now I need to find some answers!"
-setBody(Nella,normalPose) setFace(Nella,angry) next
+setBody(Nella,casualForward) setFace(Nella,seriousF) next
 Nella "I don’t understand, what is going through that head of yours."
 narrator "<i>Dylan walks off.</i>"
 Nella "Hey!"
@@ -13,10 +13,9 @@ narrator "Then Nella walks towards Dylan" exit(Nella)
 "Then he suddenly woke up in a different world" setBackground(forest)
 Dylan "Where am I?"
 "Did I die? What happened?"
-enter(Treyni) setBody(Treyni,firstPoseH) setFace(Treyni,hiddenSmile) next
+enter(Treyni) next
 Treyni "Hello there, young Hero. Pleased and honored to be able to meet you."
 Dylan "Excuse me? Who are you? Why did I end up here?"
-setBody(Treyni,secondPoseH)
 Treyni "I am the guardian of both realms."
 Dylan "What do you mean?"
 Treyni "Your body on the real world died, {a}but your soul managed to interact to this realm before you died and you made it here."

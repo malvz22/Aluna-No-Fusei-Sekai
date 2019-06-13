@@ -1,14 +1,13 @@
-setBody(Doctor,firstPose) setFace(Doctor,thinkNs)
 Doctor "Okay, you don’t need to be panic."
-narrator "as the Doctor checked on Dylan..."
-setBody(Nella,normalPose) setFace(Nella,thinking) next
+narrator "as the Doctor checked on Dylan"
+setBody(Nella,specialAngle) setFace(Nella,smileA) next
 Nella "Uh, Doc?"
 Doctor "Yeah?"
 Nella "Could it be, that he suffered amnesia?"
 Dylan "Amnesia? {a}Is that some kind of peanut?"
-setBody(Nella,prepareToBattle) setFace(Nella,angry) next
+setBody(Nella,casualAngle) setFace(Nella,seriousA) next
 Nella "Thats Almond! {a}*smacks Dylan* {a}You retard!"
-setBody(Nella,normalPose) setFace(Nella,thinking) setBody(Doctor,fifthPose) setFace(Doctor,fifthPoseEmotion) next
+setBody(Nella,casualAngle) setFace(Nella,puzzledA) next
 Doctor "No, it doesn’t seem like it was the problem."
 "I think what he said might be right."
 Dylan "What did you found?"
@@ -17,17 +16,15 @@ narrator "Then suddenly a hole appears and swallowed Dylan, Nella and the doctor
 "They wondered what happened, as Dylan, Nella and the doctor looked out the window and they were confused since everything became very different" exit(Doctor) exit(Nella) setBackground(null)
 setBackground(forest)
 Dylan "Where are we? What is this place?"
-enter(Doctor) enter(Nella) setBody(Nella,normalPose) setFace(Nella,thinking) setBody(Doctor,secondPose) setFace(Doctor,surprised) setPosition(Nella,0.5) setPosition(Doctor,0.1) next
+enter(Doctor) enter(Nella) setBody(Nella,casualAngle) setFace(Nella,puzzledA) setPosition(Nella,0.5) setPosition(Doctor,0.1) next
 Doctor "What is happening?"
-enter(Treyni) setPosition(Treyni,0.8) setBody(Treyni,firstPoseH) setFace(Treyni,hiddenSmile) next
+enter(Treyni) setPosition(Treyni,0.8) next
 Treyni "Welcome to Aluna young Hero!"
 setFace(Nella,surprisedA) next
 Nella "Who what now?"
-setBody(Treyni,secondPoseH)
 Treyni "You, young Hero *points at Dylan* it is a pleasure. You have been summoned here for a purpose to lead this nation to justice."
 Dylan "Who are you? Are you the voice inside my head?"
 Treyni "Huh? What are you talking about? No, I am here the whole time waiting for you young Hero."
-setFace(Doctor,serious) next
 Doctor "Okay, this is very weird how is this even possible."
 Treyni "Oh I forgot to introduce myself. I am Treyni, the Guardian that will guide you through your journey."
 Dylan "What?? But yeah, I do feel something swelling up inside my body."
@@ -36,5 +33,5 @@ Dylan "Aluna??"
 setFace(Nella,shockedA) next
 Nella "….. This is ridiculous"
 Treyni "Let’s go, hero."
-narrator "So they all started their journey, a new beginning in Aluna."
+narrator "So they all started their journey, a new beginning in Aluna.)"
 EndStory

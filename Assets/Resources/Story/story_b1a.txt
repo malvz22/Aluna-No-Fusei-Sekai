@@ -1,30 +1,26 @@
 Dylan "No! I am really confused right now! Please let me have some time."
-setFace(Nella,thinking) next
 Nella "You need to see a doctor. Maybe you are sick or something."
 Dylan "Good idea."
 Nella "Ok, I’ll come with you."
 setBackground(null) exit(Nella)
 narrator "Arrived at a hospital with Nella"
 setBackground(hospitalRoom)
-enter(Doctor) setPosition(Doctor,0.8) setFace(Doctor,thinkNs) setBody(Doctor,firstPose) next
+enter(Doctor) setPosition(Doctor,0.8)
 Doctor "Good morning, how may I help?"
-enter(Nella) setBody(Nella,normalPose) setFace(Nella,thinking) setPosition(Nella,0.3) next
+enter(Nella) setBody(Nella,specialAngle) setFace(Nella,puzzledA) setPosition(Nella,0.3) next
 Nella "Uhm, my brother needs help."
-setFace(Doctor,fifthPoseEmotion) setBody(Doctor,fifthPose) next
 Doctor "What is the problem?"
 Dylan "I suddenly woke up in this world and feels like being summoned by a mysterious person."
-setFace(Doctor,laugh) setBody(Doctor,fourthPose) next
 Doctor "Son, that’s your mother…"
 Dylan "Noo! {a}I heard a voice saying that I am a young Hero and I was summoned to this world to bring justice."
 Doctor "Your mother wants you to become a police? I don’t think that is a sickness."
-setBody(Nella,crossedArms) setFace(Nella,angry) setBody(Doctor,secondPose) setFace(Doctor,thinkNs) next
+setBody(Nella,casualForward) setFace(Nella,seriousF) next
 Nella "Bro, come on snap out of it! {a}You are making this scene ridiculous, stop it."
 Dylan "No. No one of you gets it! I heard it, I felt it and it is calling me."
-setFace(Nella,pokerFace) setBody(Doctor,fourthPose) setFace(Doctor,serious) next
+setFace(Nella,puzzledF)
 Doctor "Oh, I see. You really do have a problem. Let me help."
 choice ""
 {
-
   "No!!"
     Load(story_b1aa)
   "Please do, maybe you may know something"
