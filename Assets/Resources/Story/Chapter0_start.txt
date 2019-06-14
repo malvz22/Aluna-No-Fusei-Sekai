@@ -6,7 +6,7 @@ Dylan "It's... {a}Dylan."
 MysteriousVoice "Dylan, it is an honor, now go. {a}I will watch over you."
 Dylan "Wait! Who are you?"
 MysteriousVoice "You will know soon enough Young Hero."
-narrator "<i>You suddenly awaken in a room with a slight headache</i>" setBackground(bedRoom)
+narrator "<i>You suddenly awaken in a room with a slight headache</i>" setBackground(bedRoom) playMusic(Reflection)
 Dylan "Owww… {a}What just happened? {a}Was that just a dream? {a}Where am I?"
 Unknown "Dylan! {a}Dylan! {a}Wake up! {a}It’s time for you to go to school."
 Dylan "Huh? Who is that? I have school? {a}This is bad.. I don’t know what’s going on and I don’t know anyone."
