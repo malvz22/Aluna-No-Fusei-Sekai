@@ -1,32 +1,69 @@
-narrator "<i>And so, Dylan, Nella and the doctor came into a new world where they know nothing about. As they started moving around they met a mysterious person whom claimed herself as The Guardian. What mysteries will unveil? Only time will tell.</i>"
-
-enter(Doctor) enter(Nella) setBody(Nella,specialAngle) setFace(Nella,bashfulA) next
-
-Doctor "I believed she just told us she would guide us."
-
-Nella "Then she disappeared..."
-
-Doctor "Hey, what is this?"
-
-"(Picks up a carved-stone like piece on the ground)"
-
-Dylan "Trash? I don’t know"
-
-Doctor "I believe this could be important."
-
-Dylan "For what? Stone skipping?"
-
-setFace(Nella,smileA) next
-Nella "I think this could be useful for you."
-
-Dylan "What makes you think that?"
-
-Doctor "Yeah, nothing in this realm make sense but probably we should bring this along."
-
-choice ""
-{
-  "Throw it away"
-    Load(Chapter2_ba)
-  "Bring it along"
-    Load(Chapter2_bb)
-}
+Dylan "Fine!"
+setFace(Nella,thinking) setBody(Doctor,firstPose) next
+Nella "Now, where should we go?"
+Dylan "Oh maybe the stone could show the way!"
+narrator "<i>the stone glows and floats, it starts to move</i>"
+Dylan "I was joking!"
+setFace(Doctor,fifthPoseEmotion) setBody(Doctor,fifthPose) next
+Doctor "Told you it was useful."
+setBody(Nella,crossedArms) setFace(Nella,thinking) next
+Nella "Didn’t expect it has voice command technology."
+Dylan "WHAT SORCERY IS THIS?!"
+move(Nella,0.1,0.1) move(Doctor,0.35,0.1) enter(Treyni) setPosition(Treyni,0.7) setBody(Treyni,secondPoseH) setFace(Treyni,hiddenSmile) next
+Treyni "It seems you are able to activate the stone."
+Dylan "You! Explain now!"
+Treyni "There is nothing to be worried about. You will understand soon enough as we proceed."
+"Let’s go to the nearest town."
+setBackground(null) exit(Nella) exit(Doctor) exit(Treyni) next
+narrator "<i>And so, Treyni appeared before them and led them to the nearest town</i>"
+"<i>As they were heading to the town, Dylan sensed a cynical presence lurking.</i>"
+Dylan "Is it just me, or do you guys feel that?"
+Nella "I feel it too, it’s not only one."
+Dylan "Nella! The ground!"
+Nella "*dashes away*"
+Dylan "You can float?!"
+Nella "I didn’t know how I did that."
+Doctor "Must be your power responding to your reflexes."
+narrator "<i>Treyni emits energy barrier around her, {a}barrages of flames charging towards them</i>"
+Dylan "Let’s see if this works"
+narrator "<i>Dylan raised the rock in front of him</i>"
+Nella "Do you really think that could be used a shield??"
+Dylan "No! But everything in this world doesn’t make sense so it shouldn’t hurt trying."
+narrator "<i>The flames hits the rock in front of him and the rock glows red and absorbs the flames</i>"
+Dylan "I did not expect that!"
+"Ow! {a}It’s hot!"
+narrator "<i>Dylan reflects to the rocks hot texture and accidently dropped it.</i>"
+Doctor "Careful!"
+narrator "<i>The monsters that were hiding finally came out and charged at them</i>"
+"<i>Then Dylan throws rock at them, and the rock glows and shoots flames at the monsters and they ran away.</i>"
+setBackground(forest) enter(Nella) enter(Treyni) enter(Doctor) setBody(Nella,normalPose) setFace(Nella,shocked) setPosition(Nella,0.2) setBody(Doctor,thirdPose) setFace(Doctor,surprised) setPosition(Doctor,0.5) setBody(Treyni,firstPoseH) setFace(Treyni,hiddenFlatFace) setPosition(Treyni,0.8) next
+Treyni "I’ve never seen someone using that relic the way you did."
+Dylan "I have no idea that was gonna work as well."
+setFace(Nella,pokerFace)
+Nella "Can we just go now? Before we got ambushed again."
+exit(Nella) exit(Doctor) exit(Treyni) setBackground(null) next
+narrator "And so they continue their journey to the town"
+setBackground(town) enter(Nella) enter(Treyni) enter(Doctor) setBody(Nella,normalPose) setFace(Nella,smile) setPosition(Nella,0.2) setBody(Doctor,firstPose) setFace(Doctor,thinkNs) setPosition(Doctor,0.5) setBody(Treyni,firstPoseH) setFace(Treyni,hiddenSmile) setPosition(Treyni,0.8) next
+Treyni "Well, this is it. The town of <b>Crescelika</b>."
+Nella "Whoaa!"
+setBody(Treyni,secondPoseH) next
+Treyni "This town is filled with multi races living with humans."
+Nella "Can we buy some outfits?"
+Treyni "*hands out a card* Feel free."
+setFace(Nella,giggle) next
+Nella "Waah~ Thank you!"
+Dylan "I’m hungry"
+setBody(Doctor,fourthPose) next
+Doctor "What is that place?"
+exit(Treyni) exit(Nella) exit(Doctor) setBackground(null) next
+narrator "And so they entered a brunch cafe and had a nice meal"
+setBackground(cafe)
+Treyni "Let’s get all of you your equipments."
+Dylan "Sweet!! I don’t have to be stuck with this rock as my weapon anymore!"
+setBackground(null) next
+narrator "<i>Somewhere at the evil hideout</i>" setBackground(evilTemple)
+Unknown "Master! Are we close to reviving?"
+"Not yet, we will build this empire strong enough to rule over the nations."
+"The Tresburg and Hafune family might declare war against us. If they knew, and they could be very troublesome."
+"They won’t know what is coming at them."
+EndStory

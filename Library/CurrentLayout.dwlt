@@ -157,10 +157,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 681, y: 498}
+  m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 2328
+  controlID: 430
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -182,10 +182,10 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 635
-  m_MinSize: {x: 404, y: 498}
+  m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 2486
+  controlID: 369
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,10 +207,10 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 343
-  m_MinSize: {x: 404, y: 224}
-  m_MaxSize: {x: 8004, y: 4024}
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 2487
+  controlID: 370
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -429,10 +429,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 126}
-      m_SelectedIDs: 8c2d0000
-      m_LastClickedID: 11660
-      m_ExpandedIDs: d6fbffff442d0000682d00008c2d00009c2d0000b62d00003a2e0000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 4c2a0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2afaffffd6fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 530.8267, y: 56.48698, z: 15.245472}
+    m_Target: {x: 434.1296, y: 161.27797, z: 12.434053}
     speed: 2
-    m_Value: {x: 530.8267, y: 56.48698, z: 15.245472}
+    m_Value: {x: 434.1296, y: 161.27797, z: 12.434053}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -522,9 +522,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 88.75385
+    m_Target: 372.67337
     speed: 2
-    m_Value: 88.75385
+    m_Value: 372.67337
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -681,20 +681,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Images/UI
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Resources/Images/UI
+  - Assets/Scenes
   m_LastFoldersGridSize: 96
   m_LastProjectPath: E:\Let's Make a Visual Novel (StellarStudios)\Aluna-No-Fusei-Sekai
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 362b0000
-    m_LastClickedID: 11062
-    m_ExpandedIDs: 00000000c82600008e27000060290000662900006c2900008e290000122a0000922a0000042b00002e2b0000362b00005e2b0000be2b0000da2e0000dc2e0000de2e000000ca9a3b
+    scrollPos: {x: 0, y: 261}
+    m_SelectedIDs: e4290000
+    m_LastClickedID: 10724
+    m_ExpandedIDs: 00000000c82600008e27000060290000662900006c2900008e2900001c2a00009c2a00000e2b0000382b0000402b0000682b0000c82b0000e42e0000e62e0000e82e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -722,7 +722,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c82600008e27000060290000662900006c2900008e290000122a0000922a0000042b00002e2b0000362b00005e2b0000be2b0000da2e0000dc2e0000de2e000000ca9a3b
+    m_ExpandedIDs: 00000000c82600008e27000060290000662900006c2900008e2900001c2a00009c2a00000e2b0000382b0000402b0000682b0000c82b0000e42e0000e62e0000e82e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -749,8 +749,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: da230000f4290000122a00004023000002290000762c00007c2c0000882c0000742e0000ea330000f829000000000000b428000036270000a43300005235000054280000342e000000280000582a0000
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: da230000f4290000122a00004023000002290000762c00007c2c0000882c0000742e0000ea330000f829000000000000b428000036270000a43300005235000054280000342e000000280000582a00001c290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -774,7 +774,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 36}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_DirectoriesAreaWidth: 262
 --- !u!114 &20
