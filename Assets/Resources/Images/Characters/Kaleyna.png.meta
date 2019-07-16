@@ -1,31 +1,20 @@
 fileFormatVersion: 2
-guid: 3832b7d9feb623a448900b832afd0ba8
+guid: b81747b8262e8474f9ecfca717ccb988
 TextureImporter:
   fileIDToRecycleName:
-    21300000: casualA
-    21300002: specialA
-    21300004: casualF
-    21300006: specialF
-    21300008: scoldA
-    21300010: scoldF
-    21300012: blushA
-    21300014: blushF
-    21300016: smileA
-    21300018: smileF
-    21300020: wryA
-    21300022: wryF
-    21300024: laughA
-    21300026: laughF
-    21300028: normA
-    21300030: normF
-    21300032: scaredA
-    21300034: shockedA
-    21300036: shockedF
-    21300038: blush2A
-    21300040: blush2F
-    21300042: smile2A
-    21300044: smile2F
-    21300046: blue
+    21300000: confusedPose
+    21300002: confused
+    21300004: smilePose
+    21300006: smile
+    21300008: greetingPose
+    21300010: greeting
+    21300012: laughingPose
+    21300014: laugh
+    21300016: seriousPose
+    21300018: serious
+    21300020: worriedPose
+    21300022: embarrased
+    21300024: worried
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -60,7 +49,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -105,17 +94,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
     buildTarget: Android
     maxTextureSize: 4096
     resizeAlgorithm: 0
@@ -130,473 +108,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: casualA
+      name: confusedPose
       rect:
         serializedVersion: 2
         x: 4
-        y: 7957
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 3, w: 4}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70c1f60f7df25914eb835ee006eca900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: specialA
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 7957
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 7, w: 10}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff8382b5f4dd7f34bbd0c1ba4805ba0b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: casualF
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 7234
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 7, w: 12}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9527a4fbb551124b818d1f117d947f3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: specialF
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 7234
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 7, w: 10}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bef9c59558693e4c9b7d15808bcb2f8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scoldA
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 6511
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 12, w: 5}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02804087c6bd63d47a209559d142e677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scoldF
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 6511
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 9, w: 9}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fe1b4e6ef36ea947b755b5b5336ed16
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blushA
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 5788
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 10, w: 11}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d37e24d0cb9d282489671100ceac93d8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blushF
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 5788
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 9, w: 7}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b9c01753d7644e48b17fff9fd907cf9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smileA
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 5065
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 16, w: 28}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c93d8ded9011af44da9f73e39dc08d49
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smileF
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 5065
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 38, w: 23}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d4831c6826be3e45828c170b9533822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wryA
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 4342
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 27, w: 19}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91723b6ff11677749af53009e00509ae
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wryF
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 4342
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 17, w: 7}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03c01744f2110e94fb67b999b84ae2f1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laughA
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 3619
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 14, w: 28}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c75d09148c819b41976b341b52b36f6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laughF
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 3619
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 16, w: 20}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ed1532145ea53c41b76598177b8cf6c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: normA
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 2896
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 28, w: 21}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d41533b668ddc80499373f1a39796a55
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: normF
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 2896
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 24, w: 18}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9eafb0cc8a96cf849ba96bdd9be8473b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scaredA
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 2173
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 8, w: 16}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b47dfebfbf766143b0cab743bab0bed
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shockedA
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 2173
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 21, w: 13}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1eca2e76642a515469c10d6a68e55dcd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shockedF
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 1450
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 24, w: 19}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6adfe5339cd55ef41925a9f4a9235c85
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blush2A
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 1450
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 21, w: 28}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45b03d97347a364458bb698c7104077f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blush2F
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 728
-        width: 478
-        height: 718
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 19, w: 28}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b95392ce3c442d46b6c85c622d69649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smile2A
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 727
-        width: 475
-        height: 715
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 11, y: 16, z: 29, w: 35}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c21a61a4c6b05049a47f240bd830e0b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smile2F
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 4
-        width: 478
-        height: 717
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 22, w: 29}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c582ee27492b54a43a05cf9ac897362d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 4
-        width: 478
-        height: 718
+        y: 5799
+        width: 477
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,7 +122,247 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da81a225aee5ceb48a1d4cb12653e4c1
+      spriteID: ed6ae6f12a97f494ca4828ffd9325e70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: confused
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 5799
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3505d44819f36fb479462129360a2a39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smilePose
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4833
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc65fae97d213147979fb2f2a6bf59c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smile
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 4833
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcb8297f437fd14a81302026c34c754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greetingPose
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3867
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df70b73996629b14aa02cba3897fa469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greeting
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 3867
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c36599937e4d9144aab38867d4eeeb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laughingPose
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2901
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccead65c9b425945aa00a84595328dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laugh
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 2901
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f925afe748cd145b9dbf91e954f17e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seriousPose
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1936
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08e0dea6bddfc741b205c52d370fa9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: serious
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1936
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5439c5eb27024004f8cfdafd307149dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worriedPose
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 970
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2b67f26a75b7c4cbb24662f2750257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: embarrased
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 970
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f4fc66efbf3f245af72e44e678dac8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worried
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 4
+        width: 477
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f688f7b1deb0f4696b10d6912d4af8
       vertices: []
       indices: 
       edges: []
@@ -612,7 +370,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 032bc746af068d340a872cc1227b7843
+    spriteID: c53c688bb11c6d748b99a0a5c897efaa
     vertices: []
     indices: 
     edges: []
