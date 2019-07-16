@@ -782,4 +782,24 @@ public class NovelController : MonoBehaviour
 
 		TransitionMaster.ShowScene(show, spd, smooth, transTex);
 	}
+
+	public GameObject pausemenu;
+	public static bool gameispause = false;
+
+	public void Pause()
+	{
+		Time.timeScale = 0f;
+		pausemenu.SetActive(true);
+		gameispause = true;
+	}
+	public void Resume(){
+		Time.timeScale = 1f;
+		pausemenu.SetActive(false);
+		gameispause = false;
+	}
+	public void BacktoMenu()
+	{
+		Time.timeScale = 1f;
+		SceneManager.LoadScene("MainMenu");
+	}
 }
