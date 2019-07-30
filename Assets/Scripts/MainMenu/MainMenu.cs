@@ -21,16 +21,16 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        setting.GetComponent<Button>().interactable = false;
+        //setting.GetComponent<Button>().interactable = false;
         CloseSettingPanel();
         CloseLoadGamePanel();
          if (!System.IO.File.Exists(FileManager.LoadFile(FileManager.savPath + "file.txt")[0]))
         {
-            load.GetComponent<Button>().interactable = false;
+            //load.GetComponent<Button>().interactable = false;
            
         }else
         {
-            load.GetComponent<Button>().interactable = true;
+            //load.GetComponent<Button>().interactable = true;
             //loadGamePanel.gameObject.SetActive(true);
         }
     }

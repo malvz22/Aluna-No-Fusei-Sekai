@@ -2,19 +2,17 @@ fileFormatVersion: 2
 guid: b81747b8262e8474f9ecfca717ccb988
 TextureImporter:
   fileIDToRecycleName:
-    21300000: confusedPose
-    21300002: confused
-    21300004: smilePose
-    21300006: smile
-    21300008: greetingPose
-    21300010: greeting
-    21300012: laughingPose
-    21300014: laugh
-    21300016: seriousPose
-    21300018: serious
-    21300020: worriedPose
-    21300022: embarrased
-    21300024: worried
+    21300000: secondPose
+    21300002: thirdPose
+    21300004: fourthPose
+    21300006: fifthPose
+    21300008: firstPose
+    21300010: confused
+    21300012: serious
+    21300014: smile
+    21300016: angry
+    21300018: laugh
+    21300020: worried
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -108,12 +106,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: confusedPose
+      name: secondPose
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5799
-        width: 477
+        x: 3
+        y: 4834
+        width: 479
         height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -122,7 +120,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed6ae6f12a97f494ca4828ffd9325e70
+      spriteID: a42dfef688ec9794389dd09680b60f25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thirdPose
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3867
+        width: 479
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a772c882893cb4ea70eb141bc79477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fourthPose
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2902
+        width: 479
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a535beaa37f5a4ca801e424daf8159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fifthPose
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 970
+        width: 479
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c7aa6614acd184c811b85b84404e5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firstPose
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1935
+        width: 479
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e531c85635db846abf50259d8e093a
       vertices: []
       indices: 
       edges: []
@@ -131,9 +209,9 @@ TextureImporter:
       name: confused
       rect:
         serializedVersion: 2
-        x: 488
-        y: 5799
-        width: 477
+        x: 487
+        y: 4834
+        width: 479
         height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -142,147 +220,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3505d44819f36fb479462129360a2a39
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smilePose
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 4833
-        width: 477
-        height: 960
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fc65fae97d213147979fb2f2a6bf59c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smile
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 4833
-        width: 477
-        height: 960
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8dcb8297f437fd14a81302026c34c754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greetingPose
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 3867
-        width: 477
-        height: 960
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df70b73996629b14aa02cba3897fa469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greeting
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 3867
-        width: 477
-        height: 960
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c36599937e4d9144aab38867d4eeeb9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laughingPose
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 2901
-        width: 477
-        height: 960
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eccead65c9b425945aa00a84595328dc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laugh
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 2901
-        width: 477
-        height: 960
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77f925afe748cd145b9dbf91e954f17e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: seriousPose
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 1936
-        width: 477
-        height: 960
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a08e0dea6bddfc741b205c52d370fa9b
+      spriteID: 857aadd1c5bf49f4b9192581ea2eb00b
       vertices: []
       indices: 
       edges: []
@@ -291,9 +229,9 @@ TextureImporter:
       name: serious
       rect:
         serializedVersion: 2
-        x: 488
-        y: 1936
-        width: 477
+        x: 487
+        y: 3867
+        width: 479
         height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -302,18 +240,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5439c5eb27024004f8cfdafd307149dc
+      spriteID: 5a5c5167f79e27c4b9130881b1632468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: worriedPose
+      name: smile
       rect:
         serializedVersion: 2
-        x: 4
-        y: 970
-        width: 477
+        x: 487
+        y: 2902
+        width: 479
         height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -322,18 +260,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe2b67f26a75b7c4cbb24662f2750257
+      spriteID: caca30004181f6d48b4652f3435dc857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: embarrased
+      name: angry
       rect:
         serializedVersion: 2
-        x: 488
-        y: 970
-        width: 477
+        x: 487
+        y: 1935
+        width: 479
         height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -342,7 +280,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07f4fc66efbf3f245af72e44e678dac8
+      spriteID: 39f792bf85cd8134ab9fa0b014622f0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laugh
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 970
+        width: 479
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6985db703b8564c4c97de28640339ff5
       vertices: []
       indices: 
       edges: []
@@ -351,9 +309,9 @@ TextureImporter:
       name: worried
       rect:
         serializedVersion: 2
-        x: 488
-        y: 4
-        width: 477
+        x: 487
+        y: 3
+        width: 479
         height: 960
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -362,7 +320,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82f688f7b1deb0f4696b10d6912d4af8
+      spriteID: fa32787d68933074c8de088acd0d92a2
       vertices: []
       indices: 
       edges: []
@@ -370,7 +328,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c53c688bb11c6d748b99a0a5c897efaa
+    spriteID: fae1beba23d39cb43a786703623ad734
     vertices: []
     indices: 
     edges: []

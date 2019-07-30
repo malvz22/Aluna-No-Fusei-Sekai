@@ -1,15 +1,15 @@
 narrator "Kaleyna and Dylan walks into the Cafetaria" setBackground(null) exit(Kaleyna)
 setBackground(schoolPark)
 Dylan "Hey what is that?"
-enter(Kaleyna) setBody(Kaleyna,confusedPose) setFace(Kaleyna,confused) next
+enter(Kaleyna) setBody(Kaleyna,secondPose) setFace(Kaleyna,confused) next
 Kaleyna "What is what?"
 Dylan "That over there by the park!"
-setBody(Kaleyna,seriousPose) setFace(Kaleyna,serious) next
+setBody(Kaleyna,thirdPose) setFace(Kaleyna,serious) next
 Kaleyna "Hmm.."
 narrator "As they both walked towards the pointed area, Dylan’s phone received a call by an anonymous contact number."
 "As Dylan was about to pick up the call, the phone stopped ringing."
 Dylan "Huh? Who was that? Kay Chan, do you know this number?"
-enter(Kaleyna) setBody(Kaleyna,confusedPose) setFace(Kaleyna,confused) next
+enter(Kaleyna) setBody(Kaleyna,secondPose) setFace(Kaleyna,confused) next
 Kaleyna "Hmm I don’t recall having that contact number."
 Dylan "Oh well, anyways…"
 narrator "Dylan received a mysterious message. {a}Dylan received a message saying {a}“Are you the young Hero?”"
@@ -18,7 +18,7 @@ Kaleyna "What was that all about?"
 Dylan "I don’t know.."
 narrator "The same message popped up again but this time it won’t go away. {a}Dylan forcibly accepts the message"
 Dylan "That was super weird"
-setBody(Kaleyna,worriedPose) setFace(Kaleyna,worried) next
+setBody(Kaleyna,secondPose) setFace(Kaleyna,worried) next
 Kaleyna "Uhh, Dylan what is happening to you?"
 Dylan "Nothing. {a}I’m..(Looks at his hand) {a}ehhh!!? {a}I’m turning invisible!"
 setBackground(null) exit(Kaleyna)
