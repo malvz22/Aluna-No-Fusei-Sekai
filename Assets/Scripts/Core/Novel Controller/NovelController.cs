@@ -24,12 +24,13 @@ public class NovelController : MonoBehaviour
 	{
 		LoadGameFile(FileManager.LoadFile(FileManager.savPath + "file.txt")[0]);
         //LoadGameFile(FileManager.LoadFile(FileManager.savPath + "savData/file.txt")[0]);
-		
 	}
-
+	public void LoadGame()
+	{
+		LoadGameFile(FileManager.LoadFile(FileManager.savPath + "file.txt")[0]);
+	}
     public void LoadGameFile(string gameFileName)
     {
-	
 		Debug.Log("gfn = "+gameFileName);
         activeGameFileName = gameFileName;
 		//string filePath = FileManager.savPath + "savData/gameFiles/" + gameFileName ;
@@ -93,7 +94,7 @@ public class NovelController : MonoBehaviour
         handlingChapterFile = StartCoroutine(HandlingChapterFile());
 
         chapterProgress = activeGameFile.chapterProgress;
-		Next();
+		//Next();
     }
 
     public void SaveGameFile()
@@ -109,14 +110,14 @@ public class NovelController : MonoBehaviour
         activeGameFile.currentTextSystemSpeakerNameText = DialogueSystem.instance.speakerNameText.text;
         activeGameFile.currentTextSystemDisplayText = DialogueSystem.instance.speechText.text;
 
-        //get all the characters and save their stats.
-        activeGameFile.charactersInScene.Clear();
-        for(int i = 0; i < CharacterManager.instance.characters.Count; i++)
-        {
-            Character character = CharacterManager.instance.characters[i];
-            GAMEFILE.CHARACTERDATA data = new GAMEFILE.CHARACTERDATA(character);
-            activeGameFile.charactersInScene.Add(data);
-        }
+        // //get all the characters and save their stats.
+        // activeGameFile.charactersInScene.Clear();
+        // for(int i = 0; i < CharacterManager.instance.characters.Count; i++)
+        // {
+        //     Character character = CharacterManager.instance.characters[i];
+        //     GAMEFILE.CHARACTERDATA data = new GAMEFILE.CHARACTERDATA(character);
+        //     activeGameFile.charactersInScene.Add(data);
+        // }
 
         //save the layers to disk
         BCFC b = BCFC.instance;

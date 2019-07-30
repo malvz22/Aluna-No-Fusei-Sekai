@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    public byte[] keys = new byte[3] { 23, 70, 194 };
     public static MainMenu instance;
 
     public Animator loadGamePanel;
     public Animator settingPanel;
 
+    public Transform load,setting;
     public string selectedGameFile = "";
 
     void Awake()
@@ -19,8 +21,18 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CloseLoadGamePanel();
+        setting.GetComponent<Button>().interactable = false;
         CloseSettingPanel();
+        CloseLoadGamePanel();
+         if (!System.IO.File.Exists(FileManager.LoadFile(FileManager.savPath + "file.txt")[0]))
+        {
+            load.GetComponent<Button>().interactable = false;
+           
+        }else
+        {
+            load.GetComponent<Button>().interactable = true;
+            //loadGamePanel.gameObject.SetActive(true);
+        }
     }
 
     public void EndGame()
@@ -30,11 +42,14 @@ public class MainMenu : MonoBehaviour
 
     public void ClickLoadGame()
     {
-        loadGamePanel.gameObject.SetActive(true);
-        loadGamePanel.SetTrigger("activate");
+        selectedGameFile = "auto/autoSave";
+        FileManager.SaveFile(FileManager.savPath + "savData/file", selectedGameFile);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Novel");
+        // loadGamePanel.gameObject.SetActive(true);
+        // loadGamePanel.SetTrigger("activate");
 
-        if (settingPanel.gameObject.activeInHierarchy)
-            settingPanel.SetTrigger("deactivate");
+        // if (settingPanel.gameObject.activeInHierarchy)
+        //     settingPanel.SetTrigger("deactivate");
     }
 
     public void ClickSettingPanel()
@@ -65,6 +80,13 @@ public class MainMenu : MonoBehaviour
     {
         selectedGameFile = "auto/autoSave";
         FileManager.SaveFile(FileManager.savPath + "savData/file", selectedGameFile);
+        FileManager.SaveEncryptedJSON(FileManager.LoadFile(FileManager.savPath + "file.txt")[0], new GAMEFILE(), keys);
         UnityEngine.SceneManagement.SceneManager.LoadScene("Novel");
+
+        // if (!System.IO.File.Exists())
+        // {
+           
+        // }
     }
+
 }
